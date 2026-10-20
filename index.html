@@ -3,31 +3,81 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kelley West — coming soon</title>
-<meta name="description" content="Kelley West. Coming soon.">
+<title>Kelley West — Aloha Bites, coming July 2027</title>
+<meta name="description" content="Kelley West's Aloha Bites: a mystery writer, a paranormal detective agency in Hawaii, and a past she doesn't quite remember. Coming July 27, 2027 from Pocket Books.">
+<meta property="og:title" content="Aloha Bites by Kelley West">
+<meta property="og:description" content="A mystery writer, a paranormal detective agency in Hawaii, and a past she doesn't quite remember. Coming July 27, 2027.">
+<meta property="og:image" content="https://www.kelleywest.com/images/aloha-bites-cover-640.jpg">
+<meta property="og:url" content="https://www.kelleywest.com/">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital@0;1&display=swap" rel="stylesheet">
 <style>
   :root { --paper:#ffffff; --ink:#191919; --mid:#595959; color-scheme: light; }
   * { box-sizing: border-box; }
-  body { margin:0; min-height:100svh; display:grid; place-items:center;
-    background:var(--paper); color:var(--ink); padding:48px 20px; }
-  main { text-align:center; }
-  img { display:block; width:min(260px, 62vw); height:auto; margin:0 auto 2.4rem; filter:grayscale(1); }
-  h1 { font:400 clamp(2.4rem, 7vw, 3.6rem)/1.05 'Libre Caslon Display', Georgia, 'Times New Roman', serif;
+  body { margin:0; background:var(--paper); color:var(--ink);
+    font:18px/1.65 'Libre Caslon Text', Georgia, 'Times New Roman', serif; }
+  img { max-width:100%; height:auto; display:block; }
+  .wrap { max-width:1000px; margin:0 auto; padding:64px 20px 72px; }
+
+  header { text-align:center; }
+  header img { width:min(180px, 44vw); margin:0 auto 1.8rem; filter:grayscale(1); }
+  header h1 { font:400 clamp(2.4rem, 6.5vw, 3.6rem)/1.05 'Libre Caslon Display', Georgia, serif;
     letter-spacing:-0.01em; margin:0; }
-  p { font:400 13px/1.4 Archivo, Helvetica, Arial, sans-serif; letter-spacing:.3em;
-    text-transform:lowercase; color:var(--mid); margin:1.1rem 0 0; }
+
+  .book { margin-top:clamp(56px, 9vw, 96px); padding-top:clamp(48px, 7vw, 72px);
+    border-top:1px solid #00000018;
+    display:grid; grid-template-columns:minmax(200px, 300px) 1fr; gap:clamp(28px, 5vw, 64px); align-items:start; }
+  .book .cover { width:100%; box-shadow:0 18px 40px -22px rgba(0,0,0,.55); }
+  .book h2 { font:400 clamp(2rem, 4vw, 2.8rem)/1.1 'Libre Caslon Display', Georgia, serif; margin:0; }
+  .book .when { font:400 14px/1.5 Archivo, Helvetica, Arial, sans-serif; color:var(--mid); margin:.6rem 0 1.6rem; }
+  .book .hook { font-size:1.2rem; line-height:1.55; font-style:italic; margin:0 0 1.4rem; }
+  .book p { margin:0 0 1.1rem; max-width:60ch; }
+  .book .close { font-style:italic; }
+  .btn { display:inline-block; margin-top:.8rem; padding:15px 30px;
+    font:500 14px/1 Archivo, Helvetica, Arial, sans-serif; letter-spacing:.04em;
+    background:var(--ink); color:var(--paper); text-decoration:none; transition:background .12s ease-out; }
+  .btn:hover { background:#000; }
+  .btn:focus-visible { outline:2px solid var(--ink); outline-offset:3px; }
   ::selection { background:var(--ink); color:var(--paper); }
+
+  @media (max-width: 760px) {
+    .book { grid-template-columns:1fr; }
+    .book .cover { max-width:260px; margin:0 auto; }
+  }
 </style>
 </head>
 <body>
-<main>
-  <img src="images/kelley-640.jpg" alt="Kelley West, smiling, in black and white" width="640" height="960">
-  <h1>Kelley West</h1>
-  <p>coming soon</p>
-</main>
+<div class="wrap">
+  <header>
+    <img src="images/kelley-640.jpg" alt="Kelley West, smiling, in black and white" width="640" height="960">
+    <h1>Kelley West</h1>
+  </header>
+
+  <section class="book" aria-labelledby="aloha-bites">
+    <img class="cover" src="images/aloha-bites-cover-640.jpg" alt="Aloha Bites by Kelley West, book cover" width="640" height="994">
+    <div>
+      <h2 id="aloha-bites">Aloha Bites</h2>
+      <p class="when">Coming July 27, 2027 from Pocket Books</p>
+      <p class="hook">Willa Reed came to Hawaii for happily ever after. Instead, she got a paranormal
+        detective agency, a missing woman who looks exactly like her, and a past she
+        doesn&rsquo;t quite remember.</p>
+      <p>Mystery writer Willa Reed&rsquo;s fresh start in paradise isn&rsquo;t exactly going
+        according to plan. Her books aren&rsquo;t selling and her boyfriend dumps her as soon as
+        she arrives. At least she&rsquo;s managed to land a job at The Registry, a detective
+        agency run by the maddeningly handsome Luke Drake.</p>
+      <p>Luke is brooding, secretive, and suspiciously nocturnal. And stranger still is the way
+        he looks at her: like he knows her.</p>
+      <p>Then a tourist vanishes, and Willa is stunned to discover that the missing woman looks
+        almost exactly like her. When the case points toward a powerful immortal with an
+        unsettling interest in Willa, she is pulled into a hidden world of ancient magic,
+        vampire politics, and secrets The Registry has kept buried for centuries.</p>
+      <p class="close">Some mysteries are buried in the past. Some love stories are, too&hellip;</p>
+      <a class="btn" href="https://www.amazon.com/dp/B0HNKVFS3L">Preorder on Amazon</a>
+    </div>
+  </section>
+</div>
 </body>
 </html>
